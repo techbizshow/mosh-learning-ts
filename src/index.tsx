@@ -2,7 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {
+  DISPLAY_USER_NAME,
+  addNumber,
+} from './components/constants/learnts.model';
+import * as customer from './components/constants/utils';
+
+console.log('Name of god ->', DISPLAY_USER_NAME);
+
+const result = addNumber(200, 300);
+console.log(`the result is, I am good ${result} we one the goal`);
+
+console.log(customer.color.BLUE);
+var objCustomer = new customer.Customer('devesh', 30, 'london');
+objCustomer.displayCutomer();
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,8 +23,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
