@@ -43,3 +43,7 @@ export default App;
 // stringify({ sname: 'Sian', ag: 100 }, { sname: 'Bian', ag: 200 });
 // parseInt('2000');
 // 2000.toString()
+
+
+//This changes has been made by Pankaj
+//This changes has been made by Pankaj
